@@ -24,7 +24,7 @@ An experiment to try out the different resolve flags for the syscall [`openat2()
    ```
 4. Build the executable `./build/openat2-resolve`
    ```
-   podman run --rm -ti -v ./build:/build:Z -v ./openat2-resolve:/src:Z -w /build localhost/builder bash -c "cmake ../src/ && cmake --build"
+   podman run --rm -ti -v ./build:/build:Z -v ./openat2-resolve:/src:Z -w /build localhost/builder bash -c "cmake ../src/ && cmake --build ."
    ```
 
 ### Usage
